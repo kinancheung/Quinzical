@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+
+<Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" style="-fx-font-weight: bold; -fx-background-radius: 15; -fx-text-fill: #ff69b4; -fx-background-insets: 1;" text="Button" textAlignment="CENTER" textFill="WHITE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <DropShadow color="MAGENTA" offsetX="4.0" offsetY="4.0">
+         <input>
+            <InnerShadow color="HOTPINK" />
+         </input>
+      </DropShadow>
+   </effect>
+</Button>

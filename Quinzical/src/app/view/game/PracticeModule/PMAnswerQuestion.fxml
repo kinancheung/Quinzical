@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="440.0" spacing="30.0" style="-fx-background-radius: 15; -fx-background-color: rgba(255, 255, 255, 0.5);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.game.PracticeModule.PMAnswerQuestionController">
+   <children>
+      <Label fx:id="questionText" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" prefHeight="125.0" prefWidth="395.0" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: #ff00ff;" text="Question &#10;&#10;gj&#10;jl&#10;" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerInput" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="400.0" />
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aMacron" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 15; -fx-font-weight: bold; -fx-text-fill: #ff00ff;" text="ā">
+               <effect>
+                  <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0" />
+               </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eMacron" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 15; -fx-font-weight: bold; -fx-text-fill: #ff00ff;" text="ē">
+               <effect>
+                  <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0" />
+               </effect></Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#iMacron" prefHeight="40.0" prefWidth="40.0" style="-fx-text-fill: #ff00ff; -fx-font-weight: bold; -fx-background-radius: 15;" text="ī">
+               <effect>
+                  <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0" />
+               </effect></Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#oMacron" prefHeight="40.0" prefWidth="40.0" style="-fx-font-weight: bold; -fx-text-fill: #ff00ff; -fx-background-radius: 15;" text="ō">
+               <effect>
+                  <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0" />
+               </effect></Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#uMacron" prefHeight="40.0" prefWidth="40.0" style="-fx-text-fill: #ff00ff; -fx-font-weight: bold; -fx-background-radius: 15;" text="ū">
+               <effect>
+                  <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0" />
+               </effect></Button>
+         </children>
+      </HBox>
+      <VBox>
+         <children>
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#replayQuestion" prefHeight="45.0" prefWidth="140.0" style="-fx-background-radius: 15; -fx-font-weight: bold; -fx-text-fill: #ff00ff;" text="Replay Question">
+                     <effect>
+                        <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0">
+                           <input>
+                              <InnerShadow color="MAGENTA" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnSubmit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#submitAnswer" prefHeight="45.0" prefWidth="140.0" style="-fx-background-radius: 15; -fx-font-weight: bold; -fx-text-fill: #ff00ff;" text="Submit">
+                     <effect>
+                        <DropShadow color="DARKMAGENTA" offsetX="4.0" offsetY="4.0">
+                           <input>
+                              <InnerShadow color="MAGENTA" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

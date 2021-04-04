@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <?import javafx.geometry.Insets?> -->
+<!-- <?import javafx.scene.control.Label?> -->
+<!-- <?import javafx.scene.control.Slider?> -->
+<!-- <?import javafx.scene.layout.AnchorPane?> -->
+<!-- <?import javafx.scene.layout.BorderPane?> -->
+<!-- <?import javafx.scene.text.Font?> -->
+<!-- <BorderPane fx:id="slider" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#adjustQuestionSpeed" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.RootLayoutController"> -->
+<!--    <top> -->
+<!--       <AnchorPane prefHeight="100.0" prefWidth="790.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER"> -->
+<!--          <children> -->
+<!--             <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="100.0" prefWidth="786.0" text="Jeopardy" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"> -->
+<!--                <font> -->
+<!--                   <Font size="24.0" /> -->
+<!--                </font> -->
+<!--             </Label> -->
+<!--          </children> -->
+<!--          <BorderPane.margin> -->
+<!--             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" /> -->
+<!--          </BorderPane.margin> -->
+<!--       </AnchorPane> -->
+<!--    </top> -->
+<!--    <left> -->
+<!--       <Slider fx:id="slider" onDragDetected="#adjustQuestionSpeed" BorderPane.alignment="CENTER" /> -->
+<!--    </left> -->
+<!-- </BorderPane> -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.RootLayoutController">
+   <top>
+      <AnchorPane maxHeight="100.0" maxWidth="790.0" prefHeight="100.0" prefWidth="790.0" style="-fx-background-radius: 15; -fx-background-color: rgba(255, 255, 255, 0.5);" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane layoutX="247.0" layoutY="3.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="277.0" style="-fx-border-radius: 15;" text="Quinzical" textAlignment="CENTER">
+                     <font>
+                        <Font name="DejaVu Sans Bold" size="36.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" focusAngle="-75.96" focusDistance="-0.0714285714285714" radius="1.0">
+                           <stops>
+                              <Stop color="DARKBLUE" />
+                              <Stop color="DARKRED" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <effect>
+                        <Blend>
+                           <topInput>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow color="#b52727" />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant color="#0df4fc" />
+                                 </light>
+                              </Lighting>
+                           </topInput>
+                        </Blend>
+                     </effect>
+                  </Label>
+               </children>
+            </StackPane>
+            <Slider fx:id="slider" blockIncrement="0.1" layoutX="616.0" layoutY="31.0" majorTickUnit="0.5" max="2.5" min="0.5" minorTickCount="1" onDragDetected="#adjustQuestionSpeed" showTickLabels="true" showTickMarks="true" value="1.5" AnchorPane.rightAnchor="14.0">
+               <tooltip>
+                  <Tooltip text="Adjust Speech Speed&#10;1.5 is the default speed" />
+               </tooltip>
+               <effect>
+                  <ColorAdjust brightness="-0.78" saturation="1.0" />
+               </effect></Slider>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <opaqueInsets>
+            <Insets bottom="10.0" top="10.0" />
+         </opaqueInsets>
+         <effect>
+            <Glow level="0.55" />
+         </effect>
+      </AnchorPane>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>

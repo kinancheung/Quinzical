@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="600.0" style="-fx-background-color: rgba(255, 255, 255, 0.5); -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.Rewards.RewardDisplayController">
+   <center>
+      <VBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator opacity="0.0" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0">
+               <children>
+                  <Label fx:id="gameWinnings" style="-fx-text-fill: #f2c602; -fx-font-weight: bold; -fx-font-size: 24;" text="Points">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="prompt" style="-fx-text-fill: #f2c602; -fx-font-weight: bold; -fx-font-size: 24;" text="message">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#addToLeaderBoard" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-text-fill: #f2c602; -fx-font-weight: bold;" text="Add to LeaderBoard" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow color="#f2c602" offsetX="4.0" offsetY="4.0" />
+                     </effect>
+                  </Button>
+                  <Button contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#returnToMainMenu" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-text-fill: #f2c602; -fx-font-weight: bold;" text="Return to Main Menu" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow color="#f2c602" offsetX="4.0" offsetY="4.0" />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <StackPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-font-weight: bold; -fx-font-size: 24;" text="Congratulations!" textFill="#f2c602">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <StackPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </StackPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </top>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>

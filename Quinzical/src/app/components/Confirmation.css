@@ -1,0 +1,23 @@
+.Confirmation {
+	-fx-background-color: #00bfff;
+	
+}
+.Confirmation > *.button-bar > *.container {
+	-fx-background-color: #00bfff;
+}
+.Confirmation > *.label.content {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	
+}
+.Confirmation:header *.header-panel{
+	-fx-background-color: #1e90ff;
+}
+.Confirmation:header *.header-panel *.label{
+	-fx-font-size: 26px;
+	-fx-font-style: italic;
+	-fx-fill: #00bfff;
+}
+.Confirmation .button{
+	-fx-background-radius: 15;
+}

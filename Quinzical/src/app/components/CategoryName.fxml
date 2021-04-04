@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+
+
+<Button mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-text-fill: #ff69b4;" text="Button &#10;button &#10;button" textAlignment="CENTER" textFill="DARKBLUE" wrapText="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" />
